@@ -1,0 +1,234 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variable */
+:root{
+    --navbar-height: 58px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;position: relative; 
+      top: 0px;
+}
+
+/*  navigation logo and image  */
+#logo{
+margin: 10px 30px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+/* navigation list styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content:"";
+    background-color: rgba(0, 0, 0, 0.614);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+ display: block;
+ padding: 3px 22px;
+ border-radius: 20px;
+ text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* home section  */
+#home{
+    display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 455px;
+        justify-content: center;
+        align-items: center;
+}
+.sub{
+    color: white;
+    background-color: brown;
+    font-size: 20px;
+    border: 2px solid rgb(47, 42, 42);
+    padding: 4px;
+    margin: 10px
+}
+#home::before{
+    content:"";
+    background: url('foodb2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+#home h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    opacity: 0.5;
+     /* font-family: "Viga", serif; */
+}
+#home p{
+    color: white;
+    text-align: center;
+    opacity: 0.9;
+    font-size: 1.5rem;
+    font-family: "Viga", serif;
+}
+
+/* services section  */
+#services{
+    margin: 0px;
+    display: flex;
+}
+#services .box{
+    border: 2.5px solid brown;
+    margin: 2px 4px;
+    background-color: #f4eaea;
+    border-radius: 28PX;
+}
+#services .box img{
+  height: 115px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+}
+#services .box p{
+    font-size: 1.3rem;
+}
+
+/* clint section  */
+#clint-section{
+   height: 344px;
+   padding: 2px; 
+}
+#clint-section::before{
+   content: "";
+   position: absolute;
+   background: url('bg.jpg');
+   width: 99.8%;
+   height: 48%;
+   z-index: -1;
+   opacity: 0.4;
+   justify-content: center;
+
+}
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clints img{
+    height: 130px;
+}
+.clint-items{
+    padding: 36px;
+}
+
+/* contect section  */
+#contact{
+    position: relative;
+}
+#contact-section{
+    height: 344px;
+    padding: 2px; 
+ }
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('Contactt.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    padding-left: 20px;
+}
+
+
+#contact-box form{
+    width: 25%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    color: rgb(45, 41, 41);
+    font-style: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+#contact-box input,
+#contact-box input{
+    padding: 0.3rem;
+    width: 100%;
+    border-radius: 10px;
+}
+#contact-box textarea{
+    width: 95%;
+    padding: 1.0rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+footer{
+    background: #949292;
+    color: #e9dcdc;
+    padding: 9px 20px;
+
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.0rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.4rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(167, 49, 49);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+style {
+    font-size: 50px;
+    padding: 4px;
+}
+.center{
+    text-align: center;
+    color: #262323;
+}
+
+
